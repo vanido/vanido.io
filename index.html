@@ -3,115 +3,243 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="shortcut icon" href="./favico.png" type="image/png"/>
   <meta name="description" content="Vanido">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Maven+Pro:400,700' rel='stylesheet' type='text/css'>
   <link href="./style.css" rel="stylesheet">
   <title>Vanido</title>
 </head>
 <body>
-  <div class="container-fluid">
-    <div class="row">
-      <div>
-        <img class="logo" src="./vanido.png" />
+  <nav class="navbar navbar-default invert-buttons">
+    <div class="container">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img alt="VANIDO" src="./logoName@2x.png" class="app-icon">
+          </a>
       </div>
-      <div class="about col-xs-12">
-        <p class="subtitle">Your personal vocal coach</p>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">TWITTER</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <section id="hero">
+      <div class="container">
         <div class="row">
-          <p class="description">Improve your singing voice and ear through a series of daily gamified experiences. Track your progress, collect badges and create your own exercises.</p>
-          <div>
-            <img class="coming_soon" src="coming_soon.png" />
+          <div class="col-xs-12 col-md-6 col-md-offset-6">
+            <h1 class="title">Your personal singing coach</h1>
+
+            <form id="subscribe" action="#"
+              method="POST">
+              <input id="email_field" type="email" name="_replyto" placeholder="Email" class="dotted" required>
+              <input type="text" name="_gotcha" style="display:none" />
+              <br>
+              <span id="thanks" class="text-success hide">🙏 Thanks! We will keep you posted.</span>
+              <span id="error_msg" class="text-danger hide">There was a problem submitting. Please try again.</span>
+              <button id="submit" type="submit" value="Send" class="cta_subscribe"><img src="./spinner.svg" id="spinner" class="hide" alt="" />SIGN UP FOR EARLY BETA ACCESS</button>
+            </form>
           </div>
-          <img id="whale" src="./whale.png" />
         </div>
-      </div> <!-- .about -->
-    </div> <!-- .row -->
-    <form id="subscribe" action="http://formspree.io/91.himanshu+opricks@gmail.com"
-      method="POST">
-      <input id="email_field" type="email" name="_replyto" placeholder="Email" class="dotted" required>
-      <input type="text" name="_gotcha" style="display:none" />
-      <br>
-      <button id="submit" type="submit" value="Send" class="cta_subscribe">SIGN UP FOR EARLY ACCESS</button>
-    </form>
-    <p id="error_msg" class="text-danger hide">There was a problem submitting. Please try again.</p>
-    <div id="thanks" class="hide">
-      <p style="font-size: 60px;">🙏</p>
-      <p style="font-size: 18px; font-weight: bold">Thanks! We will keep you posted.</p>
-    </div>
-   
-    <div class="contact">
-      <a href="mailto:hi@manshus.com"><img id="mailicon" src="./himanshuVarsha.png" /></a>
-      <p id="contact_team"><a href="mailto:hi@manshus.com">Contact the Team</a></p>
-      <p>We love talking about life, the universe and everything!</p>
-    </div>
-    <div class="row">
-      <div class="footer col-xs-12">
+      </div>
+    </section>
+    <section id="features">
+      <div class="container">
+        <div class="row">
+          <div id="big-screens" class="col-md-6 hidden-xs hidden-sm">
+            <img id="big-iphone" src="phone@2x.png" alt="phone" />
+            <div id="carousel-screens" class="carousel slide carousel-sync">
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="./screen-1@2x.png" alt="" />
+                </div>
+                <div class="item">
+                  <img src="./screen-2@2x.png" alt="" />
+                </div>
+                <div class="item">
+                  <img src="./screen-3@2x.png" alt="" />
+                </div>
+                <div class="item">
+                  <img src="./screen-4@2x.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="carousel-features" class="carousel slide carousel-sync col-xs-12 col-md-6">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <p class="feature">IMPROVE YOUR VOICE AND EAR</p>
+                <p class="feature-info">Play games to improve your breathing, pitch,<br>ear, range and vocal consistency.</p>
+              </div>
+              <div class="item">
+                <p class="feature">REAL TIME FEEDBACK</p>
+                <p class="feature-info">Get realtime feedback. Helps train your ear and<br>know when you’re off pitch.</p>
+              </div>
+              <div class="item">
+                <p class="feature">RECOMMENDED WARMUPS</p>
+                <p class="feature-info">Keep your voice warmed up and healthy by<br>doing low-impact exercises before singing.</p>
+              </div>
+              <div class="item">
+                <p class="feature">STAY DISCPLINED</p>
+                <p class="feature-info">Track your progress, set challenging goals and<br>practice everyday.</p>
+              </div>
+            </div>
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li class="carousel-indicator" data-slide-to="0" class="active"></li>
+              <li class="carousel-indicator" data-slide-to="1"></li>
+              <li class="carousel-indicator" data-slide-to="2"></li>
+              <li class="carousel-indicator" data-slide-to="3"></li>
+            </ol>
+          </div> <!-- carousel-features -->
+          <!-- <div id="small-screens" class="col-xs-12 hidden-md hidden-lg">
+            <img id="small-iphone" alt=""src="phone@2x.png" alt="phone" />
+            <div id="carousel-small-screens" class="carousel slide carousel-sync">
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="./screen-1@2x.png" alt="" />
+                </div>
+                <div class="item">
+                  <img src="./screen-2@2x.png" alt="" />
+                </div>
+                <div class="item">
+                  <img src="./screen-3@2x.png" alt="" />
+                </div>
+                <div class="item">
+                  <img src="./screen-4@2x.png" alt="" />
+                </div>
+              </div>
+              <ol class="carousel-indicators">
+                <li class="carousel-indicator" data-slide-to="0" class="active"></li>
+                <li class="carousel-indicator" data-slide-to="1"></li>
+                <li class="carousel-indicator" data-slide-to="2"></li>
+                <li class="carousel-indicator" data-slide-to="3"></li>
+              </ol>
+            </div>
+          </div> -->
+        </div> <!-- row -->
+      </div>
+    </section>
+    <section id="how-it-works">
+      <div class="container">
+        <h2>HOW IT WORKS</h2>
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+            <div class="img-how">
+              <img alt="find base note" class="img-responsive" style="width:160px;height:92px" src="./landing-illustration-gauge@2x.png" />
+            </div>
+            <p>Gauge your voice and find<br>your base note.</p>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="img-how">
+              <img alt="personalised sessions" class="img-responsive" style="width:232px;height:195px" src="./landing-illustration-sessions@2x.png" />
+            </div>
+            <p>Get personalised training<br>sessions everyday.</p>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="img-how">
+              <img alt="track progress" class="img-responsive" style="width:104px;height:152px" src="./landing-illustration-trophy@2x.png" />
+            </div>
+            <p>Earn VaniXP to level up<br>and track your progress.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="subscribe-reminder">
+      <button class="cta_subscribe black"><a href="#email_field">SIGN UP FOR EARLY BETA ACCESS</a></button>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <a href="mailto:hi@manshus.com"><img id="mail-icon" src="./himanshuVarsha.png" /></a>
+        <p id="contact-team"><a href="mailto:hi@manshus.com">CONTACT THE TEAM</a></p>
+        <p>We love talking about life, the<br>universe and everything!</p>
+      </div>
+    </section>
+    <section id="footer">
+      <div class="container">
         <p id="delhi" class="text-muted">Harmonising with 💛 in New Delhi</p>
       </div>
-    </div>
-  </div> <!-- container-fluid -->
- <!-- GA tracking -->
- <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
- <script src="https://fgnass.github.io/spin.js/spin.min.js"></script>
- <script>
-$(document).ready(function(){
- var opts = {
-    lines: 13 // The number of lines to draw
-  , length: 4 // The length of each line
-  , width: 6 // The line thickness
-  , radius: 4 // The radius of the inner circle
-  , scale: 1 // Scales overall size of the spinner
-  , corners: 1 // Corner roundness (0..1)
-  , color: '#FFD43F' // #rgb or #rrggbb or array of colors
-  , opacity: 0.25 // Opacity of the lines
-  , rotate: 0 // The rotation offset
-  , direction: 1 // 1: clockwise, -1: counterclockwise
-  , speed: 1 // Rounds per second
-  , trail: 60 // Afterglow percentage
-  , fps: 20 // Frames per second when using setTimeout() as a fallback for CSS
-  , zIndex: 2e9 // The z-index (defaults to 2000000000)
-  , className: 'spinner' // The CSS class to assign to the spinner
-  , top: '50%' // Top position relative to parent
-  , left: '50%' // Left position relative to parent
-  , shadow: false // Whether to render a shadow
-  , hwaccel: false // Whether to use hardware acceleration
-  , position: 'absolute' // Element positioning
-}
-  $("#subscribe").submit(function(e){
-  $("#error_msg").addClass("hide");
-  var target = document.getElementById('submit');
-  var spinner = new Spinner(opts).spin(target);
-    e.preventDefault();
-    $.ajax({
-      url: "http://formspree.io/hi@manshus.com", 
-      method: "POST",
-      data: {_replyto: $("#email_field").val()},
-      dataType: "json",
-      success: function(data) {
-        spinner.stop();
-        $("#subscribe").addClass("hide");
-        $("#thanks").removeClass("hide");
-        console.log(data);
-      },
-      error: function(error) {
-        spinner.stop();
-        $("#error_msg").removeClass("hide");
-        console.log(error);
-      }
+    </section>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function(){
+    $('.nav a').click(function(){
+       $('.navbar-collapse').collapse('hide');
+    });
+    $('.carousel').carousel({
+      interval: 5000
+    });
+    $('.carousel-sync').carousel('cycle');
+
+    $('.carousel-sync').on('click', '.carousel-indicator[data-slide-to]', function (e) {
+        e.preventDefault();
+        $('.carousel-indicator').removeClass('active')
+        $(this).addClass('active')
+        $('.carousel-sync').carousel($(this).data('slide-to'));
+    });
+
+    $('.carousel-sync').on('slide.bs.carousel', function (e) {
+      var nextIndex = $(e.relatedTarget).index();
+      $('.carousel-sync').not('.sliding').addClass('sliding').carousel(nextIndex);
+    });
+
+    $('.carousel-sync').on('slid.bs.carousel', function (e) {
+      $('.carousel-sync').removeClass('sliding');
+    });
+
+    // $('#carousel-screens').on('mouseover', function(ev) {
+    //     ev.preventDefault();
+    //     $('.carousel-sync').carousel('pause');
+    // });
+    // $('#carousel-screens').on('mouseleave', function(ev) {
+    //     ev.preventDefault();
+    //     $('.carousel-sync').carousel('cycle');
+    // });
+
+    $("#subscribe").submit(function(e){
+      $('#spinner').removeClass('hide');
+      $('#error_msg').addClass('hide');
+      e.preventDefault();
+      $.ajax({
+        url: "http://formspree.io/hi@manshus.com",
+        method: 'POST',
+        data: {_replyto: $('#email_field').val()},
+        dataType: 'json',
+        success: function(data) {
+          $('#spinner').addClass('hide');
+          $('#thanks').removeClass('hide');
+        },
+        error: function(error) {
+          $('#spinner').addClass('hide');
+          $('#error_msg').removeClass('hide');
+        }
+      });
     });
   });
-});
- </script>
- <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+   </script>
+   <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-38578308-4', 'auto');
-  ga('send', 'pageview');
-</script>
+    ga('create', 'UA-38578308-4', 'auto');
+    ga('send', 'pageview');
+  </script>
 </body>
-</html>

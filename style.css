@@ -1,211 +1,395 @@
- input:focus,
- select:focus,
- textarea:focus,
- button:focus {
-  outline: none;
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+ outline: none;
 }
 
 html * {
-  font-family: 'Maven Pro', sans-serif !important;
+ font-family: 'Maven Pro', sans-serif !important;
 }
 
-body {
-  background: #fcfcfc;
+html, body {
+ background: #fcfcfc;
+ overflow-x: hidden;
+ max-width: 100%;
 }
 
 a {
-  text-decoration: none !important;
-  color: #FFD43F;
+ text-decoration: none !important;
 }
 
-.container-fluid {
-  text-align: center
+section {
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
-@font-face {
-  font-family: Ikaros;
-  src: url("./Ikaros.otf") format("opentype");
+.container-fluid .container {
+    padding-left:0;
+    padding-right:0;
 }
 
-.logo {
-  margin-bottom: 30px;
-  margin-top: 30px;
-  height: 60px;
+.navbar {
+  background-color: #fcfcfc;
+  border-color: #fcfcfc;
+  border-width: 0;
+  margin-bottom: 0;
 }
 
-.about {
-  padding: 30px;
-  background-color: #FFD43F;
-  margin-bottom: 30px;
-  position: relative;
-}
-.subtitle {
-  font-weight: 700;
-  font-size: 30px;
+#navbar-collapse-1 {
+  border-color: #fcfcfc;
+  border-width: 0;
 }
 
-.description {
+.navbar-nav>li>a {
+  line-height: 80px;
   font-size: 16px;
-  width: 420px;
-  margin-top: 5px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 40px;
+  background: #f4f4f4;
+  border-bottom: 1px solid #dfdfdf;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-.coming_soon {
-  margin-top: 15px;
-  height: 50px;
+.navbar-brand img {
+  height: 37px;
 }
 
-#whale {
-  bottom: 0;
-  width: 500px;
-  position: absolute;
-  left: 50%;
-  margin-left: -200px;
+#big-iphone {
+  width: 100px;
 }
 
-.dotted {
-  border: 3px;
-  border-style: dotted;
-  border-radius: 5px;
-}
-
-#email_field {
-  margin-top: 30px;
-}
-
-input {
+section#hero {
   text-align: center;
-  font-size: 16px;
-  width: 420px;
-  height: 60px;
+}
+
+section#hero .title {
+  color: #737373;
+  font-size: 25px;
+  margin-top: 100px;
+}
+
+section#hero #subscribe {
+  margin-top: 80px;
+  margin-bottom: -30px;
+}
+
+input#email_field {
+  text-align: center;
+  background: #f4f4f4;
+  min-width: 250px;
+  max-width: 375px;
+  width: 60%;
+  height: 40px;
+  border-width: 2px;
+  border-radius: 4px;
+  border-style: dotted;
+  border-color: #353535;
+  margin-bottom: 30px;
   -webkit-appearance: none;
 }
 
-.cta_subscribe {
-  margin-top: 30px;
-  color: white;
-  background: black;
-  height: 60px;
-  width: 420px;
-  border-radius: 30px;
-  border: none;
-  font-size: 18px;
-}
-
-.contact {
-  margin-top: 50px;
-  font-size: 13px;
-}
-
-#mailicon {
-  height: 45px;
-}
-
-#contact_team {
-  margin-top: 5px;
-  margin-bottom: 5px;
+button.cta_subscribe {
+  position: relative;
+  border-radius: 5px;
+  color: #353535;
+  background: #FFD43F;
+  font-size: 14px;
   font-weight: bold;
-  font-size: 16px;
+  min-width: 250px;
+  max-width: 450px;
+  width: 80%;
+  border: 0px;
+  height: 60px;
 }
 
-.footer {
+.cta_subscribe.black {
+  color: #FCFCFC;
+  background: #353535;
+}
+
+#spinner {
+  position: absolute;
+  width: 20px;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+section#features {
+  background-color: #353535;
+}
+
+section#features h3, p {
+  color: #fcfcfc;
+}
+
+#carousel-features {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.item .feature {
+  font-size: 18px;
+  color: #fcfcfc;
+}
+
+.item .feature-info {
+  margin-top: 30px;
+  font-size: 13px;
+  color: #aaaaaa;
+}
+
+.carousel-indicators {
+  position: relative;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.carousel-indicators li {
+  background-color: #fff;
+  opacity: 0.3;
+}
+
+.carousel-indicators li.active {
+  opacity: 1
+}
+
+#small-iphone {
+  width: 150px;
+  position: absolute;
+  margin: 0 auto;
+  margin-top: 30px;
+  left: 0;
+  right: 0;
+}
+
+#carousel-small-screens {
+  margin-top: 66px;
+  width: 130px;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+}
+
+#carousel-small-screens .carousel-indicators {
+
+}
+
+section#how-it-works {
+  text-align: center;
+  margin-top: 25px;
+}
+
+section#how-it-works p, h2 {
+  color: #737373;
+}
+
+section#how-it-works p {
+  font-size: 17px;
+}
+
+section#how-it-works .img-how {
+  position: relative;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 240px;
+  height: 240px;
+}
+
+section#how-it-works img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+section#subscribe-reminder {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: -30px;
+}
+
+section#subscribe-reminder a {
+  color: #fcfcfc;
+}
+
+section#contact {
+  padding-bottom: 30px;
+  background-color: #FFD43F;
+  text-align: center;
+}
+
+section#contact p, a {
+  color: #353535;
+}
+
+section#contact p {
+  font-size: 12px;
+}
+
+#mail-icon {
+  margin-top:100px;
+  height: 46px;
+}
+
+#contact-team {
   margin-top: 15px;
-  background: #f4f4f4;
-  padding: 0px;
+  font-weight: bold;
+  font-size: 15px;
+  opacity: 0.6;
+}
+
+section#footer {
+  height: 30px;
+  text-align: center;
 }
 
 #delhi {
-  font-size: 13px;
-  padding: 13px;
-  margin: 0px;
+  margin-top: 5px;
 }
 
-#submit {
-  position: relative;
+
+@media (min-width: 544px) {
+
 }
 
-::-webkit-input-placeholder {
- font-family: 'Maven Pro', sans-serif;
- font-size: 16px;
- text-align: center;
-}
-:-moz-placeholder { /* older Firefox*/
- font-family: 'Maven Pro', sans-serif;
- font-size:16px;
- text-align: center;
-}
-::-moz-placeholder { /* Firefox 19+ */ 
- font-family: 'Maven Pro', sans-serif;
- font-size: 16px;
- text-align: center;
-} 
-:-ms-input-placeholder { 
- font-family: 'Maven Pro', sans-serif;
- font-size: 16px; 
- text-align: center;
-}
-
-@media (max-width: 700px) {
-#whale {
-  width: 400px;
-  margin-left: -150px;
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .navbar-nav>li>a {
+    background: inherit;
+    border-bottom: inherit;
+    padding-left: 10px;
   }
-}
-@media (max-width: 500px) {
-.description {
-  font-size: 15px;
-  width: 300px;
-}
 
-input {
-  width: 350px;
-}
-.cta_subscribe {
-  width: 350px;
-  font-size: 16px;
-}
+  .navbar-brand img {
+    height: 50px;
+  }
 
-#whale {
-  width: 300px;
-  margin-left: -115px;
+  section#hero .title {
+    font-size: 36px;
+  }
+
+  #small-iphone {
+    width: 180px;
+  }
+
+  #carousel-small-screens {
+    margin-top: 74px;
+    width: 155px;
+    left: 1px;
+  }
+
+  #carousel-small-screens .carousel-indicators {
+    margin-top: 85px;
   }
 }
 
-@media (max-width: 440px) {
-.subtitle {
-  font-size: 24px;
-}
-.description {
-  font-size: 14px;
-}
-input {
-  width: 320px;
-  height: 50px;
-}
-.cta_subscribe {
-  width: 320px;
-  height: 50px;
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  section#hero {
+    text-align: left;
+  }
+
+  section#hero #subscribe {
+    margin-bottom: -40px;
+  }
+
+  input#email_field {
+    height: 50px;
+    width: 60%;
+    margin-left: 10%;
+  }
+
+  button.cta_subscribe {
+    height: 80px;
+    font-size: 18px;
+  }
+
+  #spinner {
+    width: 30px;
+  }
+
+  #big-screens {
+    text-align: center;
+    padding-left: 50px;
+    margin-top: -300px;
+    margin-bottom: -400px;
+  }
+
+  #big-iphone {
+    width: 330px;
+  }
+
+  #carousel-screens {
+    width: 285px;
+    top: -589px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 1px;
+    right: 0;
+  }
+
+  #carousel-features {
+    margin-top: 120px;
+    text-align: left;
+  }
+
+  .item .feature {
+    font-size: 22px;
+  }
+
+  .item .feature-info {
+    font-size: 16px;
+  }
+
+  .carousel-indicators {
+    margin-top: 90px;
+    text-align: left;
+    left: 0%;
+    margin-left: 0%;
+  }
+
+  section#how-it-works h2 {
+    margin-bottom: 40px;
+  }
+
+  section#subscribe-reminder {
+    margin-bottom: -40px;
   }
 }
 
-@media (max-width: 360px) {
-.subtitle {
-  font-size: 21px;
-}
-.description {
-  font-size: 13px;
-  width: 270px;
-}
-input {
-  width: 270px;
-}
-.cta_subscribe {
-  width: 270px;
-}
-#whale {
-  width: 250px;
-  margin-left: -100px;
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  button.cta_subscribe {
+    font-size: 20px;
   }
+}
+
+/* Extra small devices (portrait phones, less than 544px) */
+@media (max-width: 543px) {
+  .navbar-brand {
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    display: block;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767px) {
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991px) {
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199px) {
 }

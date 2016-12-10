@@ -8,7 +8,7 @@
   <link rel="shortcut icon" href="./favico.png" type="image/png" />
   <meta name="description" content="Learn to sing and improve your ear with Vanido. It's engaging, fun and free! Vanido is changing the way people learn and practice singing." />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
-  <link href='https://fonts.googleapis.com/css?family=Maven+Pro:400,700' rel='stylesheet' type='text/css' />
+  <link href="https://fonts.google.com/specimen/Maven+Pro?selection.family=Maven+Pro:400,700|Montserrat:700" rel="stylesheet">
   <link href="./style.css" rel="stylesheet" />
 
   <!-- Open Graph Protocol Meta -->
@@ -18,6 +18,15 @@
   <meta property='og:image' content='https://vanido.io/og_img.jpg' />
   <meta property='og:description' content="Learn to sing and improve your ear with Vanido. It's engaging, fun and free! Vanido is changing the way people learn and practice singing." />
   <!-- END Open Graph Protocol Meta -->
+  <!-- Open Twitter Card -->
+  <meta name="twitter:card" content="app">
+  <meta name="twitter:site" content="@VanidoApp">
+  <meta name="twitter:description" content="Learn to sing and improve your ear with Vanido. It's engaging, fun and free! Vanido is changing the way people learn and practice singing.">
+  <meta name="twitter:app:country" content="US">
+  <meta name="twitter:app:name:iphone" content="Vanido">
+  <meta name="twitter:app:id:iphone" content="1130249200">
+  <meta name="twitter:app:url:iphone" content="app.vanido.io://welcome">
+  <!-- END Twitter Card -->
   <meta name="apple-itunes-app" content="app-id=1130249200" />
 </head>
 <body>
@@ -31,209 +40,173 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#">
-            <img alt="VANIDO" src="./logoName@2x.png" class="app-icon">
+            <img alt="VANIDO" src="./img/logo-name.svg" class="app-icon">
           </a>
       </div>
 
       <div class="collapse navbar-collapse" id="navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">TWITTER</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="https://twitter.com/VanidoApp" target="_blank">Twitter</a></li>
+            <li><a href="mailto:varsha@vanido.io">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
   <div class="container-fluid">
-    <section id="hero">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-md-6 col-md-offset-6">
-            <h1 class="title">Your personal singing coach.</h1>
-
-            <form id="subscribe" action="#"
-              method="POST">
-              <input id="email_field" type="email" name="_replyto" placeholder="EMAIL ADDRESS" class="dotted" required>
-              <input type="text" name="_gotcha" style="display:none" />
-              <br>
-              <span id="thanks" class="text-success hide">🙏 Thanks! We will keep you posted.</span>
-              <span id="error_msg" class="text-danger hide">There was a problem submitting. Please try again.</span>
-              <button id="submit" type="submit" value="Send" class="cta_subscribe"><img src="./spinner.svg" id="spinner" class="hide" alt="" />SIGN UP FOR EARLY BETA ACCESS</button>
-            </form>
+    <div class="container top-section">
+      <div class="row">
+        <div class="col-xs-12">
+            <h1 id="title">Your personal singing coach.</h1>
+            <p id="subtitle">Learn to sing and improve your ear with Vanido. It’s engaging, fun and free!</p>
+            <a href="https://itunes.apple.com/in/app/vanido-your-personal-singing/id1130249200?mt=8" target="_blank"><img id="app-store" src="./img/appstore.svg" alt="Downlaod on the App Store"/></a>
+            <p id="android-user" onclick ="showAndroidPopUp(); return false;">I HAVE AN ANDROID DEVICE.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container dual-screen">
+      <div class="row">
+        <img class="bigger" src="./img/dual-screen.svg" alt="App Mockup Screens" />
+        <img class="smaller" src="./img/dual-screen-small.svg" alt="App Mockup Screens" />
+      </div>
+    </div>
+    <div class="container features">
+      <div class="row feature-row">
+        <div class="col-xs-12 col-sm-5 description">
+          <h2>Improve your voice and ear.</h2>
+          <hr class="separator yellow" />
+          <p>Practice exercises to improve your breathing, pitch, ear, range and vocal consistency.</p>
+        </div>
+        <div class="col-xs-12 col-sm-offset-1 col-sm-6 screen">
+          <img src="./img/phone-1@2x.png" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 feature-line"></div>
+      </div>
+      <div class="row feature-row">
+        <div class="col-xs-12 col-sm-5 col-sm-push-7 description">
+          <h2>Real time pitch detection.</h2>
+          <hr class="separator blue" />
+          <p>Get feedback on your pitch as soon as you sing. Helps train your ear and know when you’re off pitch.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-sm-pull-5 screen">
+          <img src="./img/phone-2@2x.png" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 feature-line"></div>
+      </div>
+      <div class="row feature-row">
+        <div class="col-xs-12 col-sm-5 description">
+          <h2>Personalised.</h2>
+          <hr class="separator red" />
+          <p>Determine your vocal range so that each exercise is calibrated to a range that is comfortable to sing in.</p>
+        </div>
+        <div class="col-xs-12 col-sm-offset-1 col-sm-6 screen">
+          <img src="./img/phone-3@2x.png" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 feature-line"></div>
+      </div>
+      <div class="row feature-row">
+        <div class="col-xs-12 col-sm-5 col-sm-push-7 description">
+          <h2>Stay Disciplined.</h2>
+          <hr class="separator yellow" />
+          <p>Track your progress, set challenging goals, get reminders and practice everyday.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-sm-pull-5 screen">
+          <img src="./img/phone-4@2x.png" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 feature-line"></div>
+      </div>
+    </div> <!-- features -->
+    <div class="container comments">
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+          <div class="comment">
+            <img id="left-confetti" src="./img/confetti-1.svg" alt="left decoration" />
+            <h3>I've been using Vanido everyday and I actually won first place from my school talent show! It’s all because of your app.</h2>
+            <img id="right-confetti" src="./img/confetti-2.svg" alt="right decoration" />
+          </div>
+          <p class="commentor">- Anisa</p>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container subscribe">
+      <div class="row">        
+        <h1 class="col-xs-12" >Subscribe for updates.</h1>
+        <!-- Begin MailChimp Signup Form -->
+        <form action="//vanido.us14.list-manage.com/subscribe/post?u=5ecab6fb7ea0897eebcc65eb3&amp;id=c2f0bff53d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div class="col-xs-12">
+            <input type="email" value="" name="EMAIL" placeholder="EMAIL ADDRESS" class="required email input-field">
+          </div>
+          <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5ecab6fb7ea0897eebcc65eb3_c2f0bff53d" tabindex="-1" value=""></div>
+            <div class="col-xs-12">
+              <input type="submit" value="SIGN UP" name="subscribe" id="subscribe" class="button btn btn-vanido">
+            </div>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="container footer-nav">
+        <div class="col-xs-12 text-center">
+          <div>
+            <a class="nav-link" href="#">
+              About
+            </a>
+            <a class="nav-link" href="./faq" target="_blank">
+              FAQ
+            </a>
+            <a class="nav-link" href="./privacy.html" target="_blank">
+              Privacy
+            </a>
+            <a class="nav-link" href="./terms.html" target="_blank">
+              Terms
+            </a>
+            <a class="nav-link" href="mailto:varsha@vanido.io">
+              Contact Us
+            </a>
+          </div>
+          <br>
+         <div>
+            <a class="nav-link" href="https://twitter.com/VanidoApp" target="_blank">
+              <img src="./img/twitter.svg" alt="Twitter" />
+            </a>
+            <a class="nav-link" href="https://facebook.com/VanidoApp" target="_blank">
+              <img src="./img/facebook.svg" alt="Facebook" />
+            </a>
+          </div>
+          <br>
+          <div>
+            <span>
+              © 2016 Vanido.
+            </span>
           </div>
         </div>
       </div>
-    </section>
-    <section id="features">
-      <div class="container">
-        <div class="row">
-          <div id="big-screens" class="col-md-6 hidden-xs hidden-sm">
-            <img id="big-iphone" src="phone@2x.png" alt="phone" />
-            <div id="carousel-screens" class="carousel slide carousel-sync">
-              <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                  <img src="./screen-1@2x.png" alt="" />
-                </div>
-                <div class="item">
-                  <img src="./screen-2@2x.png" alt="" />
-                </div>
-                <div class="item">
-                  <img src="./screen-3@2x.png" alt="" />
-                </div>
-                <div class="item">
-                  <img src="./screen-4@2x.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="carousel-features" class="carousel slide carousel-sync col-xs-12 col-md-6">
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <p class="feature">IMPROVE YOUR VOICE AND EAR</p>
-                <p class="feature-info">Play games to improve your breathing, pitch,<br>ear, range and vocal consistency.</p>
-              </div>
-              <div class="item">
-                <p class="feature">REAL TIME FEEDBACK</p>
-                <p class="feature-info">Get feedback on your pitch as you sing. Helps train<br>your ear and know when you’re off pitch.</p>
-              </div>
-              <div class="item">
-                <p class="feature">RECOMMENDED WARMUPS</p>
-                <p class="feature-info">Keep your voice warmed up and healthy by<br>doing low-impact exercises before singing.</p>
-              </div>
-              <div class="item">
-                <p class="feature">STAY DISCPLINED</p>
-                <p class="feature-info">Track your progress, set challenging goals and<br>practice everyday.</p>
-              </div>
-            </div>
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li class="carousel-indicator active" data-slide-to="0"></li>
-              <li class="carousel-indicator" data-slide-to="1"></li>
-              <li class="carousel-indicator" data-slide-to="2"></li>
-              <li class="carousel-indicator" data-slide-to="3"></li>
-            </ol>
-          </div> <!-- carousel-features -->
-          <!-- <div id="small-screens" class="col-xs-12 hidden-md hidden-lg">
-            <img id="small-iphone" alt=""src="phone@2x.png" alt="phone" />
-            <div id="carousel-small-screens" class="carousel slide carousel-sync">
-              <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                  <img src="./screen-1@2x.png" alt="" />
-                </div>
-                <div class="item">
-                  <img src="./screen-2@2x.png" alt="" />
-                </div>
-                <div class="item">
-                  <img src="./screen-3@2x.png" alt="" />
-                </div>
-                <div class="item">
-                  <img src="./screen-4@2x.png" alt="" />
-                </div>
-              </div>
-              <ol class="carousel-indicators">
-                <li class="carousel-indicator" data-slide-to="0" class="active"></li>
-                <li class="carousel-indicator" data-slide-to="1"></li>
-                <li class="carousel-indicator" data-slide-to="2"></li>
-                <li class="carousel-indicator" data-slide-to="3"></li>
-              </ol>
-            </div>
-          </div> -->
-        </div> <!-- row -->
-      </div>
-    </section>
-    <section id="how-it-works">
-      <div class="container">
-        <h2>HOW IT WORKS</h2>
-        <div class="row">
-          <div class="col-xs-12 col-md-4">
-            <div class="img-how">
-              <img alt="find base note" class="img-responsive" style="width:160px;height:92px" src="./landing-illustration-gauge@2x.png" />
-            </div>
-            <p>Gauge your voice and find<br>your base note.</p>
-          </div>
-          <div class="col-xs-12 col-md-4">
-            <div class="img-how">
-              <img alt="personalised sessions" class="img-responsive" style="width:232px;height:195px" src="./landing-illustration-sessions@2x.png" />
-            </div>
-            <p>Get personalised training<br>sessions everyday.</p>
-          </div>
-          <div class="col-xs-12 col-md-4">
-            <div class="img-how">
-              <img alt="track progress" class="img-responsive" style="width:104px;height:152px" src="./landing-illustration-trophy@2x.png" />
-            </div>
-            <p>Earn VaniXP to level up<br>and track your progress.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="subscribe-reminder">
-      <a href="#email_field"><button class="cta_subscribe black">SIGN UP FOR EARLY BETA ACCESS</button></a>
-    </section>
-    <section id="contact">
-      <div class="container">
-        <a href="mailto:varsha@vanido.io"><img id="mail-icon" alt="team" src="./himanshuVarsha.png" /></a>
-        <p id="contact-team"><a href="mailto:varsha@vanido.io">CONTACT THE TEAM</a></p>
-        <p>We love talking about life, the<br>universe and everything!</p>
-      </div>
-    </section>
-    <section id="footer">
-      <div class="container">
-        <p id="delhi" class="text-muted">Harmonising with 💛 in New Delhi</p>
-      </div>
-    </section>
-  </div>
-
+    </footer>
+  </div> <!-- container-fluid -->
+   <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+  <script>
+  function showAndroidPopUp() {
+    require(["mojo/signup-forms/Loader"], function(L) {
+      L.start({"baseUrl":"mc.us14.list-manage.com","uuid":"5ecab6fb7ea0897eebcc65eb3","lid":"47f7939a3f"
+      })
+    })
+    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+ };
+ </script>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script>
-  $(document).ready(function(){
-    $('.nav a').click(function(){
-       $('.navbar-collapse').collapse('hide');
-    });
-    $('.carousel').carousel({
-      interval: 5000
-    });
-    $('.carousel-sync').carousel('cycle');
-
-    $('.carousel-sync').on('click', '.carousel-indicator[data-slide-to]', function (e) {
-        e.preventDefault();
-        $('.carousel-indicator').removeClass('active')
-        $(this).addClass('active')
-        $('.carousel-sync').carousel($(this).data('slide-to'));
-    });
-
-    $('.carousel-sync').on('slide.bs.carousel', function (e) {
-      var nextIndex = $(e.relatedTarget).index();
-      $('.carousel-sync').not('.sliding').addClass('sliding').carousel(nextIndex);
-    });
-
-    $('.carousel-sync').on('slid.bs.carousel', function (e) {
-      $('.carousel-sync').removeClass('sliding');
-    });
-
-    $("#subscribe").submit(function(e){
-      $('#spinner').removeClass('hide');
-      $('#error_msg').addClass('hide');
-      e.preventDefault();
-      $.ajax({
-        url: "https://formspree.io/varsha@vanido.io",
-        method: 'POST',
-        data: {_replyto: $('#email_field').val()},
-        dataType: 'json',
-        success: function(data) {
-          $('#spinner').addClass('hide');
-          $('#thanks').removeClass('hide');
-        },
-        error: function(error) {
-          $('#spinner').addClass('hide');
-          $('#error_msg').removeClass('hide');
-        }
-      });
-    });
-  });
-   </script>
-   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -243,3 +216,4 @@
     ga('send', 'pageview');
   </script>
 </body>
+</html>

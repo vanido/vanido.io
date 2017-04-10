@@ -266,6 +266,11 @@ input.button {
     height: 11px;
 }
 
+footer {
+    position: relative;
+    z-index: 0;
+}
+
 footer .nav-link {
   text-decoration: none;
   font-size: 12px;
@@ -285,6 +290,27 @@ footer .footer-nav {
 footer .nav-link {
 	display: inline-block;
 	margin: 0 10px;
+}
+
+footer #copyright {
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+footer #skyline {
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+footer #made-in {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 11px;
 }
 
 /*  Small devices (mobiles, 404px and up) */
